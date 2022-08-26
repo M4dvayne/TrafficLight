@@ -37,6 +37,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23271E8A28B96B18003A3266 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				23F7061627887A1500F8316A /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23271E8B28B96B23003A3266 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				23F7062027887A1600F8316A /* Info.plist */,
+				23F7061427887A1500F8316A /* SceneDelegate.swift */,
+				23F7061227887A1500F8316A /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		23271E8C28B96B34003A3266 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				23F7061D27887A1600F8316A /* LaunchScreen.storyboard */,
+				23F7061827887A1500F8316A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		23271E8D28B96B4E003A3266 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				23F7061B27887A1600F8316A /* Assets.xcassets */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		23F7060627887A1400F8316A = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +91,10 @@
 		23F7061127887A1500F8316A /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				23F7061227887A1500F8316A /* AppDelegate.swift */,
-				23F7061427887A1500F8316A /* SceneDelegate.swift */,
-				23F7061627887A1500F8316A /* ViewController.swift */,
-				23F7061827887A1500F8316A /* Main.storyboard */,
-				23F7061B27887A1600F8316A /* Assets.xcassets */,
-				23F7061D27887A1600F8316A /* LaunchScreen.storyboard */,
-				23F7062027887A1600F8316A /* Info.plist */,
+				23271E8B28B96B23003A3266 /* App */,
+				23271E8A28B96B18003A3266 /* ViewControllers */,
+				23271E8C28B96B34003A3266 /* Storyboards */,
+				23271E8D28B96B4E003A3266 /* Media */,
 			);
 			path = TrafficLight;
 			sourceTree = "<group>";

@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var redLightView: UIView!
     @IBOutlet weak var yellowLightView: UIView!
     @IBOutlet weak var greenLightView: UIView!
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redLightView.layer.cornerRadius = 60
+        redLightView.layer.cornerRadius = redLightView.frame.width / 2
         yellowLightView.layer.cornerRadius = 60
         greenLightView.layer.cornerRadius = 60
         startLightButton.layer.cornerRadius = 10
@@ -30,11 +30,11 @@ class ViewController: UIViewController {
     
     @IBAction func startButtonSwitch(_ sender: UIButton) {
         sender.tag += 1
-
+        startLightButton.setTitle("NEXT", for: .normal)
+        
         if sender.tag == 1 {
             greenLightView.alpha = 0.1
             redLightView.alpha = 1
-            startLightButton.setTitle("NEXT", for: .normal)
         } else if sender.tag == 2 {
             yellowLightView.alpha = 1
             redLightView.alpha = 0.1
